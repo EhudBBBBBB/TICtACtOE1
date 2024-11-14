@@ -12,81 +12,104 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtoncClick"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="134dp" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_01"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
 
     <Button
         android:id="@+id/btn_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtoncClick"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="134dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_02"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
     <Button
         android:id="@+id/btn_02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtoncClick"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="134dp" />
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+         />
 
     <Button
         android:id="@+id/btn_10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="92dp"
         android:onClick="onButtoncClick"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="396dp" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_11"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtoncClick"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="396dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_10"
+        app:layout_constraintTop_toTopOf="@+id/btn_10"
+         />
 
     <Button
         android:id="@+id/btn_12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtoncClick"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="396dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/btn_11"
+        app:layout_constraintTop_toTopOf="@+id/btn_11"
+
+        />
 
     <Button
         android:id="@+id/btn_20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
         android:onClick="onButtoncClick"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="576dp" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_21"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtoncClick"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="576dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_22"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_20"
+        app:layout_constraintTop_toTopOf="@+id/btn_20"
+         />
 
     <Button
         android:id="@+id/btn_22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtoncClick"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="576dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/btn_21"
+        app:layout_constraintTop_toTopOf="@+id/btn_21"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
