@@ -41,10 +41,18 @@ public class MainActivity extends AppCompatActivity {
     private void onTurnEnd() {
         if(isWineer())
             endGame(turn+" Won !");
-        else if(count==9)
-            endGame(" Draw !");
-        else
-            turn=turn.equals("x")?"o":"x";
+            else{
+                count++;
+                if(count==9)
+                    endGame("Draw");
+                else{
+                    if(turn.equals("x"))
+                        turn="o";
+                    else
+                        turn="x";
+                }
+        }
+
     }
 
     private void endGame(String s) {
