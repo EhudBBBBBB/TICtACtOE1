@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void onTurnEnd() {
         if(isWineer())
-            endGame(turn+"Won !");
+            endGame(turn+" Won !");
         else if(count==9)
-            endGame("Draw !");
+            endGame(" Draw !");
         else
             turn=turn.equals("x")?"o":"x";
     }
@@ -50,8 +50,7 @@ public class MainActivity extends AppCompatActivity {
     private void endGame(String s) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("More info");
-        String msg = "this is the message body";
-        builder.setMessage(msg);
+        builder.setMessage(s);
         AlertDialog.Builder builder1 = builder.setPositiveButton("exit", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
